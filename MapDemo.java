@@ -11,7 +11,7 @@ public class MapDemo {
         companies.put(3, "Google");
         companies.put(4, "microsoft");
 
-        System.out.println("iterating map using jaava5 for each loop ");
+        System.out.println("way 1 : iterating map using jaava5 for each loop ");
         for (Integer key:companies.keySet()){
             System.out.println("---------------------");
 
@@ -19,7 +19,7 @@ public class MapDemo {
 
         }
 
-        System.out.println("iterating map in java using keyset Iterator ");
+        System.out.println("way 2 : iterating map in java using keyset Iterator ");
         System.out.println("--------------------------");
         Set<Integer> keyset = companies.keySet();
         Iterator<Integer> keyIterator = keyset.iterator();;
@@ -28,13 +28,14 @@ public class MapDemo {
             Integer key = keyIterator.next();
             System.out.println("key: "+key + " "+companies.get(key));
         }
-        System.out.println("looping map in java using entryset and java5 for loop ");
+        System.out.println("way 3 : looping map in java using entryset and java5 for loop ");
         Set<Map.Entry<Integer,String>> entrySet = companies.entrySet();
         for(Map.Entry<Integer,String> entry: entrySet){
             System.out.println("--------------------------");
             System.out.println("key + " +entry.getKey()+ "value: "+entry.getValue());
         }
 
+        System.out.println("way 4 : looping map in java using entryset and  ");
         Set<Map.Entry<Integer,String >> entrySet1 = companies.entrySet();
         Iterator<Map.Entry<Integer,String >> entryIterator = entrySet1.iterator();
         while (entryIterator.hasNext()){
