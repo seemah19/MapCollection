@@ -36,7 +36,7 @@ public class MapDemo {
             System.out.println("key + " +entry.getKey()+ "value: "+entry.getValue());
         }
 
-        System.out.println("way 4 : looping map in java using entryset and  ");
+        System.out.println("way 4 : looping map in java using entryset and iterator");
         Set<Map.Entry<Integer,String >> entrySet1 = companies.entrySet();
         Iterator<Map.Entry<Integer,String >> entryIterator = entrySet1.iterator();
         while (entryIterator.hasNext()){
