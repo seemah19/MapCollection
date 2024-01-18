@@ -28,6 +28,7 @@ public class MapDemo {
             Integer key = keyIterator.next();
             System.out.println("key: "+key + " "+companies.get(key));
         }
+
         System.out.println("way 3 : looping map in java using entryset and java5 for loop ");
         Set<Map.Entry<Integer,String>> entrySet = companies.entrySet();
         for(Map.Entry<Integer,String> entry: entrySet){
